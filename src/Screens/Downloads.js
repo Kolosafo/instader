@@ -127,7 +127,9 @@ const Downloads = ({navigation}) => {
               const fileUri = item.uri;
               let fileName = '';
               try {
-                fileName = fileUri.match(/instader([\s\S]*)$/)[0];
+                // We create filename by getting text from the value insta to the end
+                //So if file name is DCIM/Instader/insta-4-12-22, it will return from /insta to 22 ie insta-4-12-22 will be the file name
+                fileName = fileUri.match(/insta([\s\S]*)$/)[0];
               } catch (error) {
                 fileName = 'instader';
               }
