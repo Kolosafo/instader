@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   View,
   StyleSheet,
   TextInput,
-  TouchableOpacity
 } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
 import IconSearch from 'react-native-vector-icons/FontAwesome';
 
 
 const SearchBar = ({term, onTermChange, onTermSubmit}) => {
-  const [clearText, setClear] = useState(false);
 
   //function to immediately unclear it for paste to work
   return (
@@ -22,18 +19,13 @@ const SearchBar = ({term, onTermChange, onTermSubmit}) => {
         autoCapitalize="none"
         autoCorrect={false}
         placeholder="Search"
-        value={clearText ? (term = '') : term}
+        value={term}
         onChangeText={newTerm => {
-          onTermChange(newTerm), setClear(false), console.log(newTerm);
+          onTermChange(newTerm), console.log(newTerm);
         }}
         onEndEditing={setTerm => onTermSubmit(setTerm)}
         returnKeyLabel="Search"
       />
-      <TouchableOpacity
-        onPress={() => setClear(true)}
-        style={styles.clearStyle}>
-        <Icon name="closecircle" size={22} style={{color:'black'}} />
-      </TouchableOpacity>
     </View>
   );
 };

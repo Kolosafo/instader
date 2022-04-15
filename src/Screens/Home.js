@@ -224,7 +224,7 @@ const Home = ({navigation}) => {
             <View style={styles.pasteView}>
               <TouchableOpacity
                 onPress={() => {
-                  fetchCopiedText(), setLoading(true);
+                  fetchCopiedText(), setLoading(false), setData('');
                 }}>
                 <Icon name="paste" size={22} color={'green'} />
               </TouchableOpacity>

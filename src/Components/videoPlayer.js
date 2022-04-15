@@ -15,10 +15,11 @@ const Video_Player = ({url}) => {
         }}
         videoWidth={1080}
         videoHeight={1080}
-        thumbnail={{uri: 'https://i.picsum.photos/id/866/1600/900.jpg'}}
         autoplay
         showDuration
         resizeMode='contain'
+        pictureInPicture={false}
+        playInBackground={false}
       />
     </View>
   );
