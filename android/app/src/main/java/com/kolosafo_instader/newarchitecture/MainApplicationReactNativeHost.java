@@ -1,4 +1,4 @@
-package com.kolosafo_instader.newarchitecture;
+package com.kolosafo_gramoder.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.kolosafo_instader.BuildConfig;
-import com.kolosafo_instader.newarchitecture.components.MainComponentsRegistry;
-import com.kolosafo_instader.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.kolosafo_gramoder.BuildConfig;
+import com.kolosafo_gramoder.newarchitecture.components.MainComponentsRegistry;
+import com.kolosafo_gramoder.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -63,9 +63,9 @@ const Home = ({navigation}) => {
       }
     }
   };
-  const instader = RNFetchBlob.fs.dirs.DCIMDir + '/Instader';
+  const Gramoder = RNFetchBlob.fs.dirs.DCIMDir + '/Gramoder';
   RNFetchBlob.fs
-    .mkdir(instader)
+    .mkdir(Gramoder)
     .then(res => {
       console.log('res ->', res);
       setFolder(res);
@@ -85,14 +85,14 @@ const Home = ({navigation}) => {
 
     //get config and fs from RNFetchBlob
     const {config, fs} = RNFetchBlob;
-    let VideoDir = instader;
+    let VideoDir = Gramoder;
     console.log(VideoDir);
     let options = {
       fileCache: true,
       addAndroidDownloads: {
         useDownloadManager: true,
         notification: true,
-        path: VideoDir + '/insta-' + date + '.mp4',
+        path: VideoDir + '/Reel-' + date + '.mp4',
         description: 'Video',
         indicator: true,
       },
@@ -291,7 +291,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     borderColor: 'black',
-    backgroundColor: '#91d6e2',
+    backgroundColor: '#1b3c42',
   },
   contentStyle: {
     borderColor: 'red',

@@ -12,7 +12,7 @@ const Body = () => {
           <Icon name="information-circle-sharp" size={24} /> Open Instagram App
         </Text>
         <Text style={styles.textStyle}>
-          <Icon name="information-circle-sharp" size={24} /> Find The Video
+          <Icon name="information-circle-sharp" size={24} /> Find The Reel or Video
           You'd Like To Download
         </Text>
         <Text style={styles.textStyle}>
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   bodyStyle: {
     borderColor: 'red',
     borderWidth: 0,
-    backgroundColor: '#91d6e2',
+    backgroundColor: '#1b3c42',
   },
   InfoStyle: {
     alignSelf: 'center',
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: 'black',
+    color: 'white',
   },
 });
 export default Body;

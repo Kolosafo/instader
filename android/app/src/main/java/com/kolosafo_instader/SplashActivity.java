@@ -1,4 +1,4 @@
-package com.kolosafo_instader;
+package com.kolosafo_gramoder;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;

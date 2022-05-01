@@ -4,7 +4,7 @@ import Home from './src/Screens/Home';
 import Downloads from './src/Screens/Downloads';
 import playScreen from './src/Screens/playScreen';
 import {LogBox} from 'react-native';
-import React, {useEffect} from "react";
+import React from "react";
 import AppName from './src/Components/AppName';
 
 
@@ -26,7 +26,7 @@ const navigator = createStackNavigator(
     defaultNavigationOptions: {
       headerTitle: () => <AppName />,
       headerStyle: {
-        backgroundColor: '#91d6e2',
+        backgroundColor: '#1b3c42',
       },
     },
   },

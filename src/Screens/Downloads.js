@@ -76,7 +76,7 @@ const Downloads = ({navigation}) => {
   const getDownloads = () => {
     CameraRoll.getPhotos({
       first: 20,
-      groupName: 'Instader',
+      groupName: 'Gramoder',
       assetType: 'Videos',
     })
       .then(r => {
@@ -129,9 +129,9 @@ const Downloads = ({navigation}) => {
               try {
                 // We create filename by getting text from the value insta to the end
                 //So if file name is DCIM/Instader/insta-4-12-22, it will return from /insta to 22 ie insta-4-12-22 will be the file name
-                fileName = fileUri.match(/insta([\s\S]*)$/)[0];
+                fileName = fileUri.match(/Reel([\s\S]*)$/)[0];
               } catch (error) {
-                fileName = 'instader';
+                fileName = 'Reel';
               }
               return (
                 <View style={styles.container}>
@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
     marginVertical: 200,
   },
   objStyle: {
-    backgroundColor: '#91d6e2',
+    backgroundColor: '#1b3c42',
     flexDirection: 'column',
     flex: 1,
   },

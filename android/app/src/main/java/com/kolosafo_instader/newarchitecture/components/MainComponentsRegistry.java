@@ -1,4 +1,4 @@
-package com.kolosafo_instader.newarchitecture.components;
+package com.kolosafo_gramoder.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

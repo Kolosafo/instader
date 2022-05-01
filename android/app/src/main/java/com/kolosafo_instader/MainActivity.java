@@ -1,4 +1,4 @@
-package com.kolosafo_instader;
+package com.kolosafo_gramoder;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;

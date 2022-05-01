@@ -4,7 +4,7 @@ import {View, StyleSheet, Text} from 'react-native';
 const AppName = () => {
   return (
     <View style={styles.containerStyle}>
-      <Text style={styles.textStyle}>INSTADER</Text>
+      <Text style={styles.textStyle}> GRAMODER </Text>
     </View>
   );
 };
